@@ -4,16 +4,6 @@ import 'package:firebase_core/firebase_core.dart' show FirebaseOptions;
 import 'package:flutter/foundation.dart'
     show defaultTargetPlatform, kIsWeb, TargetPlatform;
 
-/// Default [FirebaseOptions] for use with your Firebase apps.
-///
-/// Example:
-/// ```dart
-/// import 'firebase_options.dart';
-/// // ...
-/// await Firebase.initializeApp(
-///   options: DefaultFirebaseOptions.currentPlatform,
-/// );
-/// ```
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
@@ -54,7 +44,8 @@ class DefaultFirebaseOptions {
     appId: '1:393917891206:android:ec177526fa08ac3b830707',
     messagingSenderId: '393917891206',
     projectId: 'assinmentluvit',
-    databaseURL: 'https://assinmentluvit-default-rtdb.asia-southeast1.firebasedatabase.app',
+    databaseURL:
+        'https://assinmentluvit-default-rtdb.asia-southeast1.firebasedatabase.app',
     storageBucket: 'assinmentluvit.appspot.com',
   );
 
@@ -63,9 +54,11 @@ class DefaultFirebaseOptions {
     appId: '1:393917891206:ios:b136a20c59d1b9f9830707',
     messagingSenderId: '393917891206',
     projectId: 'assinmentluvit',
-    databaseURL: 'https://assinmentluvit-default-rtdb.asia-southeast1.firebasedatabase.app',
+    databaseURL:
+        'https://assinmentluvit-default-rtdb.asia-southeast1.firebasedatabase.app',
     storageBucket: 'assinmentluvit.appspot.com',
-    iosClientId: '393917891206-q3ppblnva85cp6eggr0hs6vgjg13hpfi.apps.googleusercontent.com',
+    iosClientId:
+        '393917891206-q3ppblnva85cp6eggr0hs6vgjg13hpfi.apps.googleusercontent.com',
     iosBundleId: 'com.example.luvit',
   );
 }

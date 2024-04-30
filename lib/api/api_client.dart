@@ -58,8 +58,6 @@ class ApiClient {
   /// Assigns type based on a given Type[T]
   assignType<T>(var data) {
     switch (T) {
-      // case UserModel:
-      //   return data = UserModel.fromJson(data);
       case String:
         return data['message'];
       case List:
